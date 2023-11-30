@@ -16,7 +16,7 @@ export const ProductImage = ({ src, alt, ...props }) => {
       onError={handleImageError}
       crossOrigin="anonymous"
       loading="lazy"
-      {...props} // spread other props (like className, style, etc.)
+      {...props} // spread other props like className, style, etc.
     />
   );
 };

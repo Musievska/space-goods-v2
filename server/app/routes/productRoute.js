@@ -8,6 +8,5 @@ router.get('/', productController.getAllProducts);
 // Get a single product by ID
 router.get('/:id', productController.getProductById);
 
-// Define more routes as needed (POST, PUT, DELETE)
 
 module.exports = router;

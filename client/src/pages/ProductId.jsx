@@ -29,7 +29,6 @@ export const ProductId = () => {
   };
 
   const handleWishlistClick = () => {
-    console.log('Wishlist button clicked');
     setIsModalOpen(true);
   };
 
@@ -68,7 +67,6 @@ export const ProductId = () => {
               </span>
             </div>
             <div className="flex items-center justify-center gap-8">
-              {/* Add buttons and icons as needed */}
               <>
                 <AddToCartButton product={product} />
                 {""}

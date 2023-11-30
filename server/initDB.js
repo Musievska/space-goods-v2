@@ -1,5 +1,5 @@
 const sequelize = require('./db'); 
-const Product = require('./app/models/product'); // Import your models
+// const Product = require('./app/models/product'); 
 
 sequelize.sync({ force: false }) // Synchronize models with the database
   .then(() => {

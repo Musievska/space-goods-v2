@@ -1,14 +1,17 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import {
   HomeIcon,
   HeartIcon,
   ShoppingCartIcon,
-  UserIcon,
-  GlobeEuropeAfricaIcon,
+  UserIcon
 } from "@heroicons/react/24/outline";
+import { useTranslation } from 'react-i18next';
+
+import { LanguageSwitcher } from './languageSwitcher';
 
 export const NavBar = () => {
+  const { t } = useTranslation();
+
   return (
     <header className="bg-space flex justify-between items-center px-6 py-3">
       <div className="flex relative">
@@ -16,7 +19,7 @@ export const NavBar = () => {
           <HomeIcon className="icon-bounce" />
         </Link>
         <Link to="/products" className="link-style">
-          Products
+          {t("Products")}
         </Link>
       </div>
       <div className="relative ml-auto flex">
@@ -29,7 +32,7 @@ export const NavBar = () => {
         <Link to="/user" className="icon-link">
           <UserIcon className="icon-pulse" />
         </Link>
-        <GlobeEuropeAfricaIcon className="icon-spin" />
+        <LanguageSwitcher className="icon-spin" />
       </div>
     </header>
   );

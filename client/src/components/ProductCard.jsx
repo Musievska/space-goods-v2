@@ -10,8 +10,6 @@ export const ProductCard = ({ product }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleWishlistClick = () => {
-    console.log('Wishlist button clicked');
-
     setIsModalOpen(true);
   }
 

@@ -33,7 +33,7 @@
   @apply bg-slate-300;
 }
 
-.products-footer a.active {
+.products-footer .active {
   @apply bg-red-500 text-white;
 }
 
@@ -59,4 +59,56 @@
   @apply flex items-center justify-center w-6 h-6 border border-black rounded-full bg-white focus:outline-none;
 }
 
+/* navbar dropdowns menu - language switcher/user menu */
 
+.dropdown-menu-arrow::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: calc(95% - 12px);
+  border-width: 0 5px 5px 5px;
+  border-style: solid;
+  border-color: transparent transparent white transparent
+}
+
+.menu-item {
+  @apply block px-4 py-2 text-sm text-white 
+} 
+
+.menu-item:hover {
+  @apply hover:text-black
+}
+
+.round-image-padding {
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 2px;
+}
+
+.img-down-arrow::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 45%;
+  transform: translateY(-50%);
+  border-width: 3px 3px 0 3px;
+  border-color: white transparent transparent transparent;
+  border-style: solid;
+}
+
+.quantity-field {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Custom Dropdown Style */
+.custom-select {
+  appearance: none; /* Removes default browser styling */
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 1.5em;
+}
+
+.custom-select option:hover {
+  background-color: red;
+  color: white;
+}
