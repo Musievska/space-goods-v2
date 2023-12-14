@@ -1,5 +1,49 @@
-[
-    {
-        "Explore Space Goods": "Explore Space Goods"
-    }
-]
+{
+    "Products": "Products",
+    "Gallery": "Gallery",
+    "Explore Space Goods": "Explore Space Goods",
+    "Search Space Goods...": "Search Space Goods...",
+    "Category": "Category",
+    "Space Literature": "Space Literature",
+    "Space Suits": "Space Suits",
+    "Space Decor": "Space Decor",
+    "Space Tech": "Space Tech",
+    "Space Food": "Space Food",
+    "Space Gear": "Space Gear",
+    "Sorting": "Sorting",
+    "Price ↑": "Price ↑",
+    "Price ↓": "Price ↓",
+    "Rating ↑": "Rating ↑",
+    "Rating ↓": "Rating ↓",
+    "Previous": "Previous",
+    "Next": "Next",
+    "Upload your images": "Upload your images",
+    "Take 10% off your order": "Take 10% off your order",
+    "Click here to upload": "Click here to upload",
+    "Sign up": "Sign up",
+    "Sign in": "Sign in",
+    "Sign out": "Sign out",
+    "Orders History": "Orders History",
+    "Upload Images": "Upload Images",
+    "Welcome": "Welcome",
+    "Email Address": "Email Address",
+    "Password": "Password",
+    "Confirm Password": "Confirm Password",
+    "Sign Up": "Sign Up",
+    "Sign In": "Sign In",
+    "Don't have an account?" : "Don't have an account?",
+    "Already have an account?" : "Already have an account?",
+    " Drag 'n' drop some files here, or click to select files": " Drag 'n' drop some files here, or click to select files",
+    "Items": "Items",
+    "Discount": "Discount",
+    "Total": "Total",
+    "Checkout": "Checkout",
+    "Add More Products": "Add More Products",
+    "My Cart": "My Cart",
+    "No items in cart." : "No items in cart.",
+    "Purchase Resume": "Purchase Resume"
+    
+
+
+
+}

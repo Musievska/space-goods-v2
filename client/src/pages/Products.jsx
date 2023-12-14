@@ -3,7 +3,7 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 
 import { ProductCard } from "../components/ProductCard";
 import { ProductCardSkeleton } from "../ui/ProductCardSkeleton";
-import { getProducts } from "../service";
+import { getProducts } from "../utils/service";
 import { Pagination } from "../components/Pagination";
 import { useProductFilters } from "../hooks/useProductFilters";
 import { FilterProducts } from "../components/FilterProducts";
@@ -93,7 +93,10 @@ export const Products = () => {
           updateFilters={updateFilters}
           currentFilters={filters}
         />
-        <button onClick={clearFilters} className="clear-filters-btn justify-center">
+        <button
+          onClick={clearFilters}
+          className="clear-filters-btn justify-center"
+        >
           <XMarkIcon className="text-red-500 h-8 w-8 justify-center" />
         </button>
       </div>

@@ -1,4 +1,4 @@
-import { IMAGE_URL, NO_IMAGE } from "../constants";
+import { IMAGE_URL, NO_IMAGE } from "../utils/constants";
 
 export const ProductImage = ({ src, alt, ...props }) => {
   const productImage = src ? `${IMAGE_URL}${src}` : NO_IMAGE;

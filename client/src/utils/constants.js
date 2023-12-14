@@ -1,0 +1,15 @@
+export const BASE_URL = 'http://localhost:3001/api';
+export const PRODUCTS_URL = `${BASE_URL}/products`;
+export const IMAGE_URL = `http://localhost:3001`;
+export const NO_IMAGE = '/images/no_image.jpeg'
+export const SIGN_UP_URL = `${BASE_URL}/auth/sign-up`;
+export const SIGN_IN_URL = `${BASE_URL}/auth/sign-in`;
+export const SIGN_OUT_URL = `${BASE_URL}/auth/sign-out`;
+export const CHECK_USER_URL = `${BASE_URL}/auth/check`;
+export const CHECK_EMAIL_URL = `${BASE_URL}/auth/check-email`;
+export const CLOUD_NAME="space-goods"
+export const CLOUD_PRESET="spacegoods"
+export const API_KEY = "941778728811537";
+export const CLOUDINARY_NAME = "dfgwspmge"
+export const CLOUDINARY_CLOUD_URL = `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`;
+export const CLOUDINARY_GET_URL =   `http://localhost:3001/api/cloudinary/images`;

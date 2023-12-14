@@ -1,5 +1,4 @@
 require('dotenv').config();
-
 const Sequelize = require('sequelize');
 
 const sequelize = new Sequelize(
@@ -12,4 +11,18 @@ const sequelize = new Sequelize(
   }
 );
 
-module.exports = sequelize;
+// Import models
+const User = require('./app/models/user')(sequelize);
+console.log(require.resolve('./app/models/product'));
+
+// const Product = require('./app/models/product')(sequelize);
+// Sync all models with the database
+sequelize.sync({ force: false })
+  .then(() => {
+    console.log('Database & tables created!');
+  })
+  .catch(err => {
+    console.error('Error during database synchronization:', err);
+  });
+
+module.exports = { sequelize, User };

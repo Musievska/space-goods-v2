@@ -1,8 +1,10 @@
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export const SearchBar = ({ onSearch, initialQuery = "" }) => {
   const [searchQuery, setSearchQuery] = useState(initialQuery);
+  const { t } = useTranslation();
 
   const handleChange = (e) => {
     const query = e.target.value;
@@ -14,7 +16,7 @@ export const SearchBar = ({ onSearch, initialQuery = "" }) => {
     <div className="relative flex w-full max-w-xs">
       <input
         type="text"
-        placeholder="Search Space Goods..."
+        placeholder={t("Search Space Goods...")}
         value={searchQuery}
         onChange={handleChange}
         className="pl-10 pr-4 py-2 border border-red-500 rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-red-500 focus:border-red-500 w-full"

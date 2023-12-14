@@ -1,8 +1,10 @@
 import { FilterDropdown } from "../ui/FilterDropdown";
-import { categoryOptions, sortOptions } from "../utils/filterOptions";
+import { useCategoryOptions, useSortOptions } from "../utils/filterOptions";
 
 export const FilterProducts = ({ updateFilters, currentFilters }) => {
-  
+  const categoryOptions = useCategoryOptions();
+  const sortOptions = useSortOptions();
+
   const handleCategoryChange = (event) => {
     updateFilters({ category: event.target.value, page: 1 });
   };
@@ -15,12 +17,12 @@ export const FilterProducts = ({ updateFilters, currentFilters }) => {
     <>
       <FilterDropdown
         options={categoryOptions}
-        value={currentFilters.category} // Add this
+        value={currentFilters.category} 
         onChange={handleCategoryChange}
       />
       <FilterDropdown
         options={sortOptions}
-        value={currentFilters.sort} // Add this
+        value={currentFilters.sort} 
         onChange={handleSortChange}
       />
     </>

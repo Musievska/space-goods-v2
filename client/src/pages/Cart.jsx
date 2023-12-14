@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { toast } from 'react-toastify';
-
+import { useTranslation } from "react-i18next";
 
 import { CartCard } from "../ui/CartCard";
 import { PurchaseResume } from "../ui/PurchaseResume";
@@ -8,6 +8,7 @@ import { CartSkeleton } from "../ui/CartSkeleton";
 
 export const Cart = () => {
   const [cartItems, setCartItems] = useState(undefined);
+  const { t } = useTranslation();
 
   useEffect(() => {
     // Load cart items from local storage
@@ -50,7 +51,7 @@ export const Cart = () => {
       {cartItems.length > 0 ? (
         <>
           <div className="w-full flex flex-col h-fit gap-4 p-4">
-            <p className="text-red-500 text-xl font-extrabold">My Cart</p>
+            <p className="text-red-500 text-xl font-extrabold">{t("My Cart")}</p>
             {cartItems.map((product) => (
               <CartCard
                 key={product.id}
@@ -63,7 +64,7 @@ export const Cart = () => {
           <PurchaseResume cartItems={cartItems} />
         </>
       ) : (
-        <p className="text-center text-xl">No items in cart.</p>
+        <p className="text-center text-xl">{t("No items in cart.")}</p>
       )}
     </div>
   );
